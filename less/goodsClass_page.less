@@ -1,0 +1,186 @@
+ 
+.goodsClass-page {
+    height: 100%-0.77-0.92rem;
+    header {
+        height: 0.77rem;
+        overflow: hidden;
+        .search-box {
+            position: relative;
+            width: 5.88rem;
+            height: 0.5rem;
+            margin: 0.14rem auto;
+            input {
+                width: 100%;
+                height: 100%;
+                border: 0 none;
+                background-color: #f3f3f3;
+                border-radius: 0.05rem;
+                padding-left: 0.8rem;
+                box-sizing: border-box;
+            }
+            .iconfont {
+                position: absolute;
+                left: 0.28rem;
+                top: 50%;
+                margin-top: -0.12rem;
+                font-size: 0.2rem;
+            }
+        }
+    }
+    
+    .content {
+        @activeCor : #fe6903;
+        border-top: 0.02rem solid #dbdbdb;
+        .menu-wrap {
+            float: left;
+            overflow: auto;
+            width: 1.33rem;
+            border-right: 0.01rem solid #dbdbdb;
+            .outer-menu {
+                width: 100%;
+                .outer-list {
+                    line-height: 0.8rem;
+                    text-align: center;
+                    border-bottom: 0.01rem solid #f6f6f6;
+                    border-left: 0.05rem solid transparent;
+                    box-sizing: border-box;
+                    a {
+                        font-size: 0.21rem;
+                        color: #000;
+                    }
+                    &.active {
+                        border-left: 0.05rem solid #ff5601;
+                        background-color: #f3f3f3;
+                        .inside-menu {
+                            background-color: #f3f3f3;
+                        }
+                    }
+                    .inside-menu {
+                        position: relative;
+                        left: -0.05rem;
+                        z-index: 2;
+                        width: 1.33rem;
+                        display: none;
+                        background-color: #fff;
+                        li {
+                            border-bottom: 0.01rem solid #f6f6f6;
+                            text-align: initial;
+                            padding-left: 0.19rem;
+                            box-sizing: border-box;
+                            a {
+                                position: relative;
+                                padding-left: 0.08rem;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                display: block;
+                            }
+                            &.active {
+                                a {
+                                   &:after {
+                                       position: absolute;
+                                       z-index: 10;
+                                       left: 0;
+                                       top: 50%;
+                                       margin-top: -0.12rem;
+                                       content: "";
+                                       display: block;
+                                       height: 0.24rem;
+                                       width: 0.05rem;
+                                       background-color: #ff5601;
+                                   } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //右侧商品列表
+        .content-goodslist {
+            width: 100%;
+            padding-left: 1.34rem;
+            box-sizing: border-box;
+            .filter {
+                line-height: 0.78rem;
+                text-align: center;
+                background-color: #f3f3f3;
+                .iconfont {
+                    font-size: 0.1rem;
+                }
+            }
+            .goodsList-wrap {
+                overflow: auto;
+                position: relative;
+                z-index: 1;
+                -ms-touch-action: none;
+                ul {
+                    position: absolute;
+                    z-index: 1;
+                    height: auto;
+                    width: 100%;
+                    li {
+                        border-bottom: 0.01rem solid #f7f7f7;
+                        a {
+                            position: relative;
+                            display: block;
+                            height: 1.4rem;
+                            .img-wrap {
+                                float: left;
+                                width: 1.4rem;
+                                height: 100%;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    transform: scale(1);
+                                }
+                            }
+                            .goods-info {
+                                float: left;
+                                padding-left: 0.26rem;
+                                h3 {
+                                    font-size: 0.2rem;
+                                    color: #000;
+                                    line-height: 0.6rem;
+                                    padding-bottom: 0.3rem;
+                                    .weight {
+                                        padding-left: 0.1rem;
+                                    }
+                                }
+                                .price-wrap {
+                                    .price {
+                                        font-size: 0.16rem;
+                                        color: #ff3f00;
+                                    }
+                                    s {
+                                        font-size: 0.14rem;
+                                        color: #c4c4c4;
+                                        padding-left: 0.1rem;
+                                    }
+                                }
+                            }
+                            .shopping-cart {
+                                position: absolute;
+                                right: 0.26rem;
+                                bottom: 0.22rem;
+                                .iconfont {
+                                    display: block;
+                                    width: 0.36rem;
+                                    line-height: 0.36rem;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    background-color: #ffcc28;
+                                    font-size: 0.22rem;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+

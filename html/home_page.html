@@ -1,0 +1,110 @@
+<!--首页内容页面-->
+<div class="home-page">
+	<!-------------头部内容----------------->
+	<header class="clearfix">
+		<div class="header-bar">
+			<div class="address">
+				<span>送至：</span><span>中国工商银行（万家星城支行）</span><span class="iconfont icon-jiantouxia"></span>
+			</div>
+			<div class="message">
+				<i class="iconfont icon-xiaoxi"></i>
+				<i class="dot"></i>
+			</div>
+		</div>
+		<div class="banner clearfix">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" ng-repeat="imgSrc in bannerImgs">
+						<a href="javascript:;">
+							<img ng-src="{{imgSrc.iconUrl}}" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="search-box">
+				<div class="sub-box">
+					<input type="text" placeholder="搜索您想要的商品、品牌" />
+					<i class="iconfont icon-sousuo"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-----------导航部分-------------->
+	<nav class="bb20">
+		<ul>
+			<li ng-repeat="navData in nav" ng-click="goPage('/goodsClass')">
+				<a href="javascript:;">
+					<img ng-src="{{navData.iconUrl}}" alt="" />
+					<span ng-bind="navData.title"></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!---------主体商品内容-------->
+	<div class="content">
+		<div class="bargain-price bb20">
+			<div class="cn-title">
+				<h2 ng-bind-template="{{bpGoodsList.title}}"></h2>
+				<span>更多<i>></i></span>
+			</div>
+
+			<div id="goods-wrapper-scroll" class="goods-wrapper-scroll clearfix">
+				<div id="scroller" class="scroller">
+					<ul>
+						<li ng-repeat="bpGoods in bpGoodsList.goods">
+							<img ng-src="{{bpGoods.bigPicUrl}}" />
+							<p><span class="icon">特价</span><span class="brand" ng-bind="bpGoods.brand"></span>{{bpGoods.itemName}}</p>
+							<s ng-bind="bpGoods.offlinePrice/100 | currency : '¥' : 1"></s>
+							<span class="current-price" ng-bind="bpGoods.price/100 | currency : '¥' : 1"></span>
+							<span class="iconfont icon-icongouwuche"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="recommend bb20">
+			<div class="cn-title">
+				<h2 ng-bind-template="{{recommend.title}}"></h2>
+				<span>更多<i>></i></span>
+			</div>
+			<ul>
+				<li class="clearfix" ng-repeat="recGoods in recommend.goods">
+					<img ng-src="{{recGoods.bigPicUrl}}" />
+					<div class="info">
+						<p class="info-content">
+							<span class="brand" ng-bind="recGoods.brand"></span>
+							{{recGoods.itemName}}
+						</p>
+						<p class="price-wrap">
+							<span class="current-price" ng-bind="recGoods.price/100 | currency : '¥' : 1"></span>
+							<s class="offlinePrice" ng-bind="recGoods.offlinePrice/100 | currency : '¥' : 1"></s>
+						</p>
+					</div>
+					<a class="buy" href="javascript:;">去抢购</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="recComm" ng-repeat="recComm in recCommData">
+			<img class="title-img" ng-src="{{recComm.iconUrl}}" alt="{{recComm.title}}" />
+			<ul>
+				<li ng-repeat="goods in recComm.goods">
+					<a href="javascript:;">
+						<div class="img-wrap">
+							<img ng-src="{{goods.bigPicUrl}}" alt="{{}}"/>
+						</div>
+						<h4 ng-bind="goods.itemName"></h4>
+						<s ng-bind="goods.offlinePrice/100 | currency : '¥' : 1"></s>
+							<span class="current-price" ng-bind="goods.price/100 | currency : '¥' : 1"></span>
+						<span class="iconfont icon-icongouwuche"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,24 @@
+{
+	"index.html": {
+		"resources": [
+			"js/main.js",
+			"js/angular-ui-router.js",
+			"json/home.json",
+			"js/swiper-3.4.1.min.js",
+			"css/home-page.css",
+			"css/main.css",
+			"js/iscroll.js",
+			"css/ba.css",
+			"css/swiper-3.4.1.min.css",
+			"js/angular.min.js",
+			"css/my_page.css",
+			"json/goodsClass.json",
+			"images/icon/icon-fl.jpg",
+			"images/icon/icon-car.jpg",
+			"images/icon/icon-wd.jpg",
+			"css/goodsClass_page.css",
+			"images/icon/icon-sy.jpg",
+			"css/shopingCart_page.css"
+		]
+	}
+}

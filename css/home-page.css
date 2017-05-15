@@ -1,0 +1,347 @@
+.home-page {
+  padding-bottom: 0.92rem;
+}
+.home-page .header-bar {
+  height: 0.8rem;
+  background-color: #f9f9f9;
+}
+.home-page .header-bar .address {
+  height: 100%;
+  margin-left: 0.3rem;
+  float: left;
+  font-size: 0.18rem;
+  line-height: 0.8rem;
+}
+.home-page .header-bar .address span {
+  display: inline-block;
+  max-width: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home-page .header-bar .address span.iconfont {
+  padding-left: 0.1rem;
+}
+.home-page .header-bar .message {
+  position: relative;
+  float: right;
+  margin-right: 0.26rem;
+  line-height: 0.8rem;
+}
+.home-page .header-bar .message .iconfont {
+  font-size: 0.32rem;
+}
+.home-page .header-bar .message .dot {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #ff6808;
+  border-radius: 50%;
+}
+.home-page .banner {
+  width: 100%;
+}
+.home-page .banner .swiper-container {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+.home-page .banner .swiper-container img {
+  display: block;
+  width: 100%;
+}
+.home-page .banner .swiper-container .swiper-pagination {
+  left: auto;
+  right: 0;
+  width: auto;
+}
+.home-page .banner .swiper-container .swiper-pagination span {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0 0.02rem;
+}
+.home-page .banner .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fdce28;
+  border: none;
+}
+.home-page .banner .search-box {
+  height: 0.9rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f6f6f6;
+  overflow: hidden;
+}
+.home-page .banner .search-box .sub-box {
+  position: relative;
+  margin: 0.18rem auto;
+  width: 5.7rem;
+  height: 0.54rem;
+}
+.home-page .banner .search-box .sub-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 0.64rem;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 0.27rem;
+  box-sizing: border-box;
+}
+.home-page .banner .search-box .sub-box input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #7a7a7a;
+}
+.home-page .banner .search-box .sub-box input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #7a7a7a;
+}
+.home-page .banner .search-box .sub-box input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #7a7a7a;
+}
+.home-page .banner .search-box .sub-box input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #7a7a7a;
+}
+.home-page .banner .search-box .sub-box .iconfont {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.16rem;
+  font-size: 0.2rem;
+  color: #fe6601;
+}
+.home-page .bb20 {
+  border-bottom: 0.2rem solid #f3f3f3;
+}
+.home-page nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home-page nav ul li {
+  width: 0.98rem;
+  padding: 0.17rem 0.1rem;
+}
+.home-page nav ul li a {
+  display: block;
+}
+.home-page nav ul li a img {
+  display: block;
+  margin: 0 auto;
+  width: 0.72rem;
+  height: 0.72rem;
+}
+.home-page nav ul li a span {
+  display: block;
+  text-align: center;
+  font-size: 0.18rem;
+  color: #373737;
+  line-height: 0.3rem;
+}
+.home-page .content .cn-title {
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  line-height: 0.78rem;
+  color: #252525;
+  border-bottom: 2px solid #f3f3f3;
+}
+.home-page .content .cn-title h2 {
+  font-weight: normal;
+  font-size: 0.24rem;
+}
+.home-page .content .cn-title span {
+  position: absolute;
+  font-size: 0.22rem;
+  right: 0.28rem;
+  top: 0;
+  color: #a2a2a2;
+}
+.home-page .content .cn-title span i {
+  font-size: 0.07rem;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll {
+  position: relative;
+  z-index: 1;
+  height: 3.8rem;
+  width: 100%;
+  overflow: auto;
+  -ms-touch-action: none;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller {
+  position: absolute;
+  z-index: 1;
+  width: 14.4rem;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul {
+  height: 100%;
+  width: 100%;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li {
+  position: relative;
+  float: left;
+  width: 2.4rem;
+  height: 3.8rem;
+  overflow: hidden;
+  border-right: 0.1rem solid #f3f3f3;
+  padding: 0.14rem;
+  box-sizing: border-box;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li:last-child {
+  border-right: 0;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li p {
+  padding-top: 0.1rem;
+  font-size: 0.23rem;
+  color: #000;
+  line-height: 0.35rem;
+  height: 0.7rem;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li p .icon {
+  font-size: 0.15rem;
+  background-color: #fe6905;
+  border-radius: 0.07rem;
+  padding: 0 0.08rem;
+  color: #fff;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li p .brand {
+  padding: 0 0.1rem;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li s {
+  font-size: 0.15rem;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li .current-price {
+  display: block;
+  font-size: 0.17rem;
+  color: #fe6905;
+}
+.home-page .content .bargain-price .goods-wrapper-scroll .scroller ul li .iconfont {
+  display: block;
+  position: absolute;
+  right: 0.14rem;
+  bottom: 0.17rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  font-size: 0.24rem;
+  color: #fe6f0f;
+  text-align: center;
+  line-height: 0.36rem;
+}
+.home-page .content .recommend ul li {
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+}
+.home-page .content .recommend ul li img {
+  float: left;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+.home-page .content .recommend ul li .info {
+  float: left;
+  padding-top: 0.13rem;
+}
+.home-page .content .recommend ul li .info .info-content {
+  font: 0.22rem/0.72rem "微软雅黑";
+  color: #000;
+}
+.home-page .content .recommend ul li .info .info-content .brand {
+  padding-right: 0.2rem;
+}
+.home-page .content .recommend ul li .info .price-wrap {
+  line-height: 0.72rem;
+}
+.home-page .content .recommend ul li .info .price-wrap .current-price {
+  color: #ff3800;
+  font-size: 0.17rem;
+}
+.home-page .content .recommend ul li .info .price-wrap .offlinePrice {
+  font-size: 0.14rem;
+}
+.home-page .content .recommend ul li .buy {
+  position: absolute;
+  right: 0.26rem;
+  bottom: 0.36rem;
+  width: 1.15rem;
+  height: 0.35rem;
+  background-color: #ff6f0f;
+  border: 1px solid #ff5c01;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  line-height: 0.35rem;
+  border-radius: 0.07rem;
+}
+.home-page .content .recComm {
+  border-bottom: 0.15rem solid #f3f3f3;
+}
+.home-page .content .recComm:last-child {
+  border: none;
+}
+.home-page .content .recComm .title-img {
+  display: block;
+  height: 1.95rem;
+}
+.home-page .content .recComm ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+}
+.home-page .content .recComm ul li {
+  width: 2.1rem;
+  background-color: #fff;
+  margin-bottom: 0.05rem;
+}
+.home-page .content .recComm ul li a {
+  position: relative;
+  display: block;
+}
+.home-page .content .recComm ul li a .img-wrap {
+  height: 2.1rem;
+  overflow: hidden;
+}
+.home-page .content .recComm ul li a .img-wrap img {
+  width: 100%;
+}
+.home-page .content .recComm ul li a h4 {
+  height: 0.8rem;
+  font-size: 0.21rem;
+  color: #000;
+  padding-left: 0.16rem;
+  line-height: 0.4rem;
+}
+.home-page .content .recComm ul li a s {
+  display: block;
+  font-size: 0.15rem;
+  color: #c0c0c0;
+  padding-left: 0.16rem;
+  line-height: 0.4rem;
+}
+.home-page .content .recComm ul li a .current-price {
+  display: block;
+  font-size: 0.17rem;
+  color: #fe6905;
+  padding-left: 0.16rem;
+  line-height: 0.4rem;
+}
+.home-page .content .recComm ul li a .iconfont {
+  display: block;
+  position: absolute;
+  right: 0.14rem;
+  bottom: 0.17rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  font-size: 0.24rem;
+  color: #fe6f0f;
+  text-align: center;
+  line-height: 0.36rem;
+}

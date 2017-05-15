@@ -1,0 +1,49 @@
+<!------商品列表------->
+<div class="goodsClass-page">
+	<header id="goodsClass-header">
+		<div class="search-box">
+			<input type="text" placeholder="搜索你想要的商品、品牌"/>
+			<i class="iconfont icon-sousuo"></i>
+		</div>
+	</header>
+	
+	<!-------主体内容-------->
+	<div id="content" class="content">
+		<!--商品菜单-->
+		<div id="menu-wrap" class="menu-wrap">
+			<ul class="outer-menu" id="outer-menu">
+				<li class="outer-list" ng-repeat="goodsList in data.cats" >
+					<a href="javascript:;" ng-bind="goodsList.catName"></a>
+					<ul class="inside-menu">
+						<li class="indise-list" ng-repeat="subList in goodsList.children">
+							<a href="javascript:;" ng-bind="subList.catName"></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-----商品列表----->
+		<div class="content-goodslist">
+			<div class="filter" id="filter">综合排序<i class="iconfont icon-shang-copy"></i></div>
+			<div id="goodsList-wrap" class="goodsList-wrap">
+				<ul>
+					<li ng-repeat="item in data.items">
+						<a class="clearfix" href="javascript:;">
+							<div class="img-wrap" id="img-wrap">
+								<img ng-src="{{item.bigPicUrl}}" alt="" />
+							</div>
+							<div class="goods-info">
+								<h3><span ng-bind="item.itemName"></span><span class="weight" ng-bind="item.normalSpecDesc"></span></h3>
+								<p class="price-wrap"><span class="price" ng-bind="item.price/100 | currency : '¥' : 1"></span><s ng-bind="item.offlinePrice/100 | currency : '¥' : 1"></s></p>
+							</div>
+							<div class="shopping-cart" ng-click="addCart($event)">
+								<i class="iconfont icon-icongouwuche"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>

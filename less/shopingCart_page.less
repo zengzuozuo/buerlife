@@ -1,0 +1,161 @@
+
+.shopping-cart {
+    .shopping-header {
+        height: 0.77rem;
+        border-bottom: 0.01rem solid #d7d7d7;
+        font: 0.29rem/0.77rem "微软雅黑";
+        text-align: center;
+        font-weight: bold;
+    }
+    .content {
+        position: relative;
+        overflow: auto;
+        &.empty {
+            position: fixed;
+            left: 0;
+            top: 0.77rem;
+            width: 100%;
+            background-color: #f3f3f3;
+            .tip-wrap {
+                margin-top: 3rem;
+                text-align: center;
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+                p {
+                    text-align: center;
+                    line-height: 0.46rem;
+                }
+                a {
+                    display: block;
+                    margin: 0 auto;
+                    width: 1.96rem;
+                    height: 0.62rem;
+                    background-color: #ffcf25;
+                    font-size: 0.22rem;
+                    border-radius: 0.08rem;
+                    line-height: 0.62rem;
+                    color: #000000;
+                }
+            }
+        }
+        &.show-list {
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            .store {
+                height: 0.78rem;
+                line-height: 0.78rem;
+                .select-on {
+                    float: left;
+                    width: 0.78rem;
+                    height: 0.78rem;
+                    display: block;
+                    background: url(../images/icon/checked.png) no-repeat center;
+                    background-size: 0.22rem 0.22rem;
+                }
+                .store-content {
+                    float: left;
+                    .store-icon {
+                        font-size: 0.26rem;
+                    }
+                    .store-name {
+                        font-size: 0.22rem;
+                        padding-left: 0.36rem;
+                    }
+                    .arrows {
+                        font-size: 0.16rem;
+                        padding-left: 0.14rem;
+                    }
+                }
+            }
+            .activity {
+                height: 0.44rem;
+                border-top: 0.01rem solid #f5f2ed;
+                border-bottom: 0.01rem solid #f5f2ed;
+                background-color: #fef4e8;
+            }
+            //商品列表
+            .goods-list {
+                .goods-item {
+                    height: 1.42rem;
+                    border-bottom: 0.01rem solid #f5f2ed;
+                    .select-on {
+                       height: 100%;
+                       width: 0.78rem;
+                       float: left;
+                       background: url(../images/icon/checked.png) no-repeat center;
+                       background-size: 0.22rem 0.22rem; 
+                    }
+                    .goods-content {
+                        height: 100%;
+                        position: relative;
+                        .img-wrap {
+                            float: left;
+                            height: 100%;
+                            overflow: hidden;
+                            img {
+                                width: 1.42rem;
+                            }
+                        }
+                        .goods-info {
+                            float: left;
+                            padding-left: 0.28rem;
+                            .goods-name {
+                                display: block;
+                                padding-top: 0.14rem;
+                                font-size: 0.2rem;
+                                color: #000;
+                                line-height: 0.33rem;
+                                font-weight: bold;
+                            }
+                            .size {
+                                font-size: 0.18rem;
+                                line-height: 0.3rem;
+                                color: #494949;
+                            }
+                            .price-wrap {
+                                padding-top: 0.23rem;
+                                .price {
+                                    color: #ff4a01;
+                                }
+                                s {
+                                    color: #d1d1d1;
+                                    font-size: 0.14rem;
+                                    padding-left: 0.1rem;
+                                }
+                            }
+                        }
+                        .cart-bar {
+                            position: absolute;
+                            right: 0.26rem;
+                            bottom: 0.17rem;
+                            .amount {
+                                float: left;
+                                display: inline-block;
+                                width: 0.45rem;
+                                height: 0.36rem;
+                                text-align: center;
+                                line-height: 0.36rem;
+                                color: #ff4a01;
+                            }
+                            .iconfont {
+                                float: left;
+                                color: #fece22;
+                                font-size: 0.38rem;
+                            }
+                            .minus {
+                                
+                            }
+                            .add {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

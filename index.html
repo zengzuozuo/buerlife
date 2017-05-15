@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="ngapp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ba.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_8ykwuz4tbm5f80k9.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/home-page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my_page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goodsClass_page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopingCart_page.css"/>
+	</head>
+	<body ng-controller="main" >
+		
+		
+		<div class="view" ui-view></div>
+		
+		
+		
+		<footer class="public-footer" id="public-footer">
+			<ul>
+				<li class="home" ng-click="goPage('/home')">
+					<a href="javascript:;">
+						<i ng-class="{true:'active',false:''}[url=='/home']"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="classify" ng-click="goPage('/goodsClass')">
+					<a href="javascript:;">
+						<i ng-class="{true:'active',false:''}[url=='/goodsClass']"></i>
+						<span>分类</span>
+					</a>
+				</li>
+				<li class="shopping-cart" ng-click="goPage('/shopingCart')">
+					<a href="javascript:;">
+						<i ng-class="{true:'active',false:''}[url=='/shopingCart']"></i>
+						<span>购物车</span>
+						<span class="goods-num"></span>
+					</a>
+				</li>
+				<li class="my" ng-click="goPage('/my')">
+					<a href="javascript:;">
+						<i ng-class="{true:'active',false:''}[url=='/my']"></i>
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-ui-router.js"></script>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/swiper-3.4.1.min.js"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ng-inertiaScroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

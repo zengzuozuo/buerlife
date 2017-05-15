@@ -1,0 +1,51 @@
+
+<div class="shopping-cart">
+	<header class="shopping-header" id="shopping-header">
+		购物车
+	</header>
+	<!----------主体内容------------->
+	<div class="content empty" id="shopping-content-empty">
+		<div class="tip-wrap">
+			<img src="./images/empty-tipImg.jpg" alt="" />
+			<p>
+				您的粮仓见底了<br />
+				快去采购吧
+			</p>
+			<a href="javascript:;" ng-click="goPage('/goodsClass')">先去逛逛</a>
+		</div>
+	</div>
+	<div class="content show-list" id="shopping-content">
+		<div class="store-wrap">
+			
+			<div class="store">
+				<span class="select-on"></span>
+				<div class="store-content">
+					<i class="store-icon iconfont icon-shangdian"></i>
+					<span class="store-name">东新仓储</span>
+					<i class="arrows iconfont icon-youjiantou"></i>
+				</div>
+			</div>
+			<div class="activity">
+				
+			</div>
+			<ul class="goods-list">
+				<li class="goods-item" ng-repeat="goodsInfo in addGoodsList">
+					<span class="select-on"></span>
+					<div class="goods-content clearfix">
+						<a class="img-wrap" href="javascript:;"><img ng-src="{{goodsInfo.bigPicUrl}}"/></a>
+						<div class="goods-info">
+							<a class="goods-name" href="javascript:;" ng-bind="goodsInfo.itemName"></a>
+							<p class="size"><span ng-bind="goodsInfo.normalSpecDesc"></span>/<span ng-bind="goodsInfo.unit">袋</span></p>
+							<p class="price-wrap"><span class="price" ng-bind="goodsInfo.price/100 | currency : '¥' : 1">¥8</span><s ng-bind="goodsInfo.offlinePrice/100 | currency : '¥' : 1">¥10</s></p>
+						</div>
+						<div class="cart-bar">
+							<i class="minus iconfont icon-icon1460189759358" ng-click="minusAmount($event)"></i>
+							<span class="amount" ng-bind="amount">1</span>
+							<i class="add iconfont icon-jia" ng-click="addAmount($event)"></i>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
